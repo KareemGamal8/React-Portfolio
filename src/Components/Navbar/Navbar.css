@@ -34,10 +34,11 @@
     transition: .3s;
     bottom: 0;
 }
-.navbar-links .links a:hover {
+
+.navbar-links .links a:hover, .navbar-links .links a.active {
     color: #F9004D;
 }
-.navbar-links .links a:hover::before {
+.navbar-links .links a:hover::before, .navbar-links .links a.active:before{
     width: 100%;
 }
 .navbar-icons
