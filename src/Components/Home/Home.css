@@ -1,0 +1,34 @@
+.home {
+    background-image: url(../images/background.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size:cover;
+    position: relative;
+    width: 100%;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.home-conent {
+    color: white;
+    top: 40%;
+    position: absolute;
+    width: 60%;
+}
+.home-conent p {
+    color: #9597A2;
+    letter-spacing: 5px;
+}
+.home-conent h1 {
+    font-size: 4.8rem;
+    font-weight: 800;
+    text-transform: capitalize;
+}
+.home-conent h1 span {
+    color: #F9004D;
+}
