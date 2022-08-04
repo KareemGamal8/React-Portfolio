@@ -1,0 +1,60 @@
+.navbar {
+    position: fixed;
+    width: 100%;
+    padding: 15px 0;
+}
+.navbar-content, .navbar-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-links .logo {
+    width: 4rem;
+}
+.navbar-links .links  {
+    margin-left: 40px;
+}
+.navbar-links .links  a {
+    text-decoration: none;
+    color: white;
+    margin: 0 15px;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: all 0.5s;
+    position: relative;
+    padding-bottom: 20px;
+}
+.navbar-links .links a:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: #F9004D;
+    transition: .3s;
+    bottom: 0;
+}
+
+.navbar-links .links a:hover, .navbar-links .links a.active {
+    color: #F9004D;
+}
+.navbar-links .links a:hover::before, .navbar-links .links a.active:before{
+    width: 100%;
+}
+.navbar-icons
+{
+    color: #f0f0f0;
+    text-align: center;
+}
+.navbar-icons i {
+    padding: 22px;
+    font-size: 1.2rem;
+    transition: all 0.8s;
+    cursor: pointer;
+    position: relative;
+
+}
+.navbar-icons i:hover {
+    color: #F9004D;
+    top: -3px;
+}
