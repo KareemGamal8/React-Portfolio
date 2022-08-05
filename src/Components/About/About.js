@@ -1,6 +1,6 @@
 import React from 'react';
 import imageMain from '../images/main-img.png';
-
+import {BrowserRouter,NavLink} from 'react-router-dom';
 import './About.css';
 function About() {
   return (
@@ -15,7 +15,14 @@ function About() {
                     There are many variations of passages of Lorem Ipsum available, but the majority have suffered <span>alteration</span> in some form, by injected humour, 
                     or randomised words which dont look even slightly believable. If you are going to use a passage of Lorem Ipsum,
                 </p>
-              
+                <div className='about-navbar'>
+                    <BrowserRouter>
+                        <NavLink to='/'>main skills</NavLink>
+                        <NavLink to='/awards'>awards</NavLink>
+                        <NavLink to='/experience'>experience</NavLink>
+                        <NavLink to='/education'>education & certification</NavLink>
+                    </BrowserRouter>
+                </div>
                 <div className='about-navbar-content'>
                     There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,
                 </div>
