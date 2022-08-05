@@ -2,7 +2,7 @@ import React from 'react'
 import './Services.css'
 function Services() {
   return (
-    <div className='services pd-x'>
+    <div className='services pd-x' id="Services">
       <div className='pd-y'>
         <h4 className='section-title'>My Awesome Service</h4>
         <p className='section-desc'>There are many variations of passages of Lorem Ipsum available, but <br/> the majority have suffered alteration.</p>
