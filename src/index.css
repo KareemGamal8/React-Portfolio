@@ -5,13 +5,18 @@
 }
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
 }
 a  {
   text-decoration: none;
+  color: white;
 }
 .content {
   width: 100%;
 }
 .pd-x {
   padding: 0 60px;
+}
+.pd-y {
+  padding: 120px 0;
 }

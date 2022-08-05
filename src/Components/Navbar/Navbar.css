@@ -1,7 +1,8 @@
 .navbar {
     position: fixed;
     width: 100%;
-    padding: 15px 0;
+    background-color: #000000;
+    z-index: 999;
 }
 .navbar-content, .navbar-links {
     display: flex;
