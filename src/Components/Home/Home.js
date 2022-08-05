@@ -3,7 +3,7 @@ import './Home.css';
 import Navbar from '../Navbar/Navbar';
 function Home() {
   return (
-    <div>
+    <div id='Home'>
         <div className='home pd-x'>
             <div className='overlay'>
               <Navbar />

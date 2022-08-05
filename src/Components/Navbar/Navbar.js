@@ -1,8 +1,7 @@
 import React from 'react';
 import './Navbar.css';
-import {BrowserRouter,NavLink} from 'react-router-dom';
 import Logo from '../images/logo-symbol-dark.png';
-function Navbar() {
+function Navbar(active) {
 
     return (
         <div className="navbar">
@@ -10,14 +9,12 @@ function Navbar() {
                     <div className='navbar-links'>
                         <img src={Logo} alt='Logo' className='logo'/>
                         <div className='links'>
-                           <BrowserRouter>
-                                <NavLink to="/">Home <span></span></NavLink>
-                                <NavLink to="/About">About <span></span></NavLink>
-                                <NavLink to="/Services">Services <span></span></NavLink>
-                                <NavLink to="/Portfolio">Portfolio <span></span></NavLink>
-                                <NavLink to="/Blog">Blog <span></span></NavLink>
-                                <NavLink to="/Contact">Contact <span></span></NavLink>
-                           </BrowserRouter>
+                                <a href='#Home'>Home <span></span></a>
+                                <a href='#About'>About <span></span></a>
+                                <a href='#Services'>Services <span></span></a>
+                                <a href='#Portfolio'>Portfolio <span></span></a>
+                                <a href='#Blog'>Blog <span></span></a>
+                                <a href='#Contact'>Contact <span></span></a>
                         </div>
                         </div>
                         <div className='navbar-icons'>
@@ -26,7 +23,7 @@ function Navbar() {
                         <i className="fa-brands fa-linkedin-in"></i>
                         <i className="fa-brands fa-instagram"></i>
                         </div>
-                    </div>
+                </div>
         </div>
     )
 }
