@@ -1,0 +1,70 @@
+.portfolio {
+    background-color: #191919;
+}
+.portfolio-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.portfolio-card {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 31%;
+    margin: 15px 0;
+    position: relative;
+    cursor: pointer;
+    height: 85vh;
+    transition: 0.3s;
+}
+.portfolio-card:hover {
+    width: 33%;
+}
+
+.card-one {
+    background-image: url(../images/portfolio-6.jpg);
+}
+.card-two {
+    background-image: url(../images/portfolio-4.jpg);
+}
+.card-three {
+    background-image: url(../images/portfolio-5.jpg);
+}
+.card-four {
+    background-image: url(../images/portfolio-2.jpg);
+}
+.card-five {
+    background-image: url(../images/download.jpg);
+}
+.card-six {
+    background-image: url(../images/85068cad88edf59af68bf05ae5c35d37.jpg);
+}
+.card-content {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 90%;
+}
+.card-content p {
+    color: #9597A2;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.card-content h5 {
+    color: #ffffff;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+.card-content button {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+    border: 1px solid #9597A2;
+    padding: 8px 25px;
+    font-size: 1.1rem;
+    border-radius: 2px;
+    text-transform: uppercase;
+}

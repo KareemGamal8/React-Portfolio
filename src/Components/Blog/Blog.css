@@ -1,0 +1,64 @@
+.blog {
+    background-color: #101010;
+}
+.blog-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.blog-card {
+    width: 31%;
+    height: 85vh;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    transition: overflow 0.3s;
+    margin: 15px 0;
+    cursor: pointer;
+}
+.blog-card:hover {
+    overflow: visible;
+}
+.blog-card:first-of-type {
+    background-image: url(../images/portfolio-4.jpg);
+}
+.blog-card:nth-last-of-type(2) {
+    background-image: url(../images/portfolio-5.jpg);
+}
+.blog-card:last-child {
+    background-image: url(../images/portfolio-6.jpg);
+}
+.blog-card .blog-card-content {
+    position: absolute;
+    padding-top: 990px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s;
+    width: 80%;
+}
+.blog-card:hover .blog-card-content  {
+    padding-top: 810px;
+}
+.blog-card-content p {
+    font-size: 1.2rem;
+    color: #9597A2;
+    margin-bottom: 20px;
+}
+.blog-card-content h5 {
+    font-size: 1.5rem;
+    color: #f0f0f0;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+.blog-card-content button {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+    border: 1px solid #9597A2;
+    padding: 8px 20px;
+    font-size: 0.9rem;
+    border-radius: 2px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
