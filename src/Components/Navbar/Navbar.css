@@ -1,0 +1,127 @@
+.navbar, .nav-scroll {
+    width: 100%;
+    background-color: none;
+    z-index: 9999;
+    padding: 10px;
+}
+
+.nav-scroll {
+    background-color: #000000;
+    color: #F9004D;
+    position: fixed;
+    transition: 0.5s ease-in 0.1s;
+    top: 0;
+}
+.nav-scroll .navbar-links .links a {
+    color: #9597A2;
+}
+.navbar-content, .navbar-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+/* @media (max-width: 992px) {
+    .links {
+       position: absolute;
+       width: 60%;
+       top: 0;
+       left: 0;
+       height: 100vh;
+       z-index: 10000;
+       background-color: #000000;
+       text-align: left;
+       transition: 0.5 ease-in-out;
+    }
+    .navbar-links .links a:before{
+        display: none;
+    }
+    .navbar {
+        background-color: #000000;
+        color: #F9004D;
+        position: fixed;
+    }
+    .navbar-bars button {
+        display: block;
+    }
+    .links ul  {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .links li {
+        width: 100%;
+        padding: 20px;
+        border-bottom: 2px solid #F9004D;
+    }
+
+} */
+.navbar-bars  {
+    display: block;
+}
+.links-hidden {
+    display: none;
+    transition: 0.5s;
+}
+.navbar-links .links ul  {
+    gap: 15px;
+    display: flex;
+    align-items: center;
+}
+.navbar-links .logo {
+    width: 4rem;
+}
+
+.navbar-links .links  a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: all 0.5s;
+    position: relative;
+    padding-bottom: 20px;
+}
+.navbar-links .links a:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: #F9004D;
+    transition: .3s;
+    bottom: 0;
+}
+.navbar-links .links a:hover {
+    color: #F9004D;
+}
+
+.navbar-links .links a:hover::before{
+    width: 100%;
+}
+.navbar-icons
+{
+    color: #f0f0f0;
+    text-align: center;
+}
+.navbar-icons i {
+    padding: 10px;
+    font-size: 1.2rem;
+    transition: all 0.8s;
+    cursor: pointer;
+    position: relative;
+
+}
+.navbar-icons i:hover {
+    color: #F9004D;
+    top: -3px;
+}
+
+.navbar-bars  {
+    background: none;
+    border: none;
+    z-index: 10000;
+    display: none;
+}
+.navbar-bars i {
+    color: white;
+    font-size: 1.8rem;
+}
