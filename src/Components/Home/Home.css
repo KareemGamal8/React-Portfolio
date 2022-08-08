@@ -5,11 +5,15 @@
     background-size:cover;
     position: relative;
 }
-
+@media (max-width:767px) {
+    .home-content h1 {
+        font-size: 2rem;
+        margin-top:5%;
+    }
+}
 .home-content {
-    width: 100%;
-    margin-top: 300px;
-    position: absolute;
+    margin-top: 15%;
+    width: 60%;
 }
 .home-content p {
     color: #9597A2;
@@ -17,7 +21,7 @@
 }
 .home-content h1 {
     color: white;
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 800;
     text-transform: capitalize;
 }
