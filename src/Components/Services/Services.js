@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Services.css";
 import Cards from "./Cards";
 function Services() {
-  const [cardLIst, setCardList] = useState(
+  const [cardLIst, setCardList] = useState([
     {
       icon: "fa-solid fa-layer-group",
       title: "web development",
@@ -33,7 +33,7 @@ function Services() {
       title: "web development",
       desc: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered.",
     }
-  );
+  ]);
   return (
     <div className="services pd-x" id="Services">
       <div className="pd-y">
